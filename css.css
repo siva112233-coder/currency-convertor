@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #999bab, #c33764); /* Gradient with a modern feel */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 3rem;
+    /* text-align: center; */
+    /* margin-bottom: 30px; */
+     
+    position: relative;
+     bottom: 280px;
+     right: -200px;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color:  rgba(0, 183, 255, 0.8);
+}
+
+/* Form Container */
+form {
+    background: #2d2f40;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+                -10px -10px 20px rgba(255, 255, 255, 0.1);
+    position: relative;
+    text-align: center;
+    position: relative;
+    right: 240px;
+}
+
+/* Amount Section */
+.amount label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.amount input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    margin-bottom: 20px;
+    background: #3e4057;
+    color: #ffffff;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.amount input:focus {
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.8);
+}
+
+/* Currency Selection Section */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.container p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5),
+                0 -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #3e4057;
+    color: #ffffff;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.container select:focus {
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.8);
+}
+
+/* Swap Icon Styling */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #00b7ff;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon i:hover {
+    transform: rotate(180deg);
+    color: #ffa500;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 64, 0, 0.6);
+}
+
+/* Answer Section */
+#answer {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffab;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .icon {
+        margin: 15px 0;
+    }
+}
