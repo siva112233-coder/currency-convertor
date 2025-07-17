@@ -3,7 +3,7 @@
 A fully responsive and interactive real-time currency converter web application using HTML, CSS, and JavaScript. The app fetches live exchange rates from an open API and allows users to convert between any two currencies with automatic flag updates.
 
 ## Demo
-![Uploading Screenshot 2025-07-17 120633.png…]()
+<img width="784" height="766" alt="Screenshot 2025-07-17 120633" src="https://github.com/user-attachments/assets/38c5f2a5-1f5f-4079-8434-94da95418123" />
 
 
 ## 🔧 Features
