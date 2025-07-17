@@ -15,6 +15,6 @@ A fully responsive and interactive real-time currency converter web application 
 - HTML5
 - CSS3 (Modern, Responsive UI)
 - Vanilla JavaScript
-- [FawazAhmed Currency API](https://github.com/fawazahmed0/currency-api)
+-  Currency API
 - Font Awesome Icons
 - Country flag images via `flagsapi.com`
